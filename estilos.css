@@ -1,1 +1,111 @@
+body{
+  background-color: burlywood;
+  font-family: "Roboto", sans-serif;
+}
 
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: white;
+}
+
+.logo{
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+}
+
+nav{
+  gap: 55px;
+}
+
+.menu{
+  color: black
+}
+
+main{
+  background-color: silver;
+  padding: 10px;
+  margin-top: 15px;
+}
+
+main h1{
+  font-size: 35px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.introducción-titulo{
+  font-size: 25px;
+  font-weight: bold;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.parrafo{
+  font-size: 16px;
+  text-align: justify;
+}
+
+.poster{
+  width: 150px;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 20px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 20px;
+}
+
+.card {
+  position: relative;
+  border-radius: 20px;
+  grid-column: span 12;
+}
+
+.card img.poster {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card-content {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+  color: red;
+  text-align: center;
+}
+
+.resena {
+  background-color: white;
+  padding: 6px;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+footer{
+  background-color: darkslategray;
+  color: white;
+  padding: 3px;
+  margin-top: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .card {
+    grid-column: span 6;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .card {
+    grid-column: span 4;
+  }
+}
